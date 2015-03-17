@@ -38,12 +38,12 @@ public class Board {
 				else{cellCharacter = Board.emptySpaceCharacter;}
 				
 				// 10% of terrain is impassable
-//				Random rand = new Random();
-//				int randomNum1 = rand.nextInt(10) + 1;
-//				if(randomNum1 < 2){
-//					impassableBlocks.add(new Location(x, y));
-//					cellCharacter = Board.impassableBlockCharacter;
-//				}
+				Random rand = new Random();
+				int randomNum1 = rand.nextInt(10) + 1;
+				if(randomNum1 < 2){
+					impassableBlocks.add(new Location(x, y));
+					cellCharacter = Board.impassableBlockCharacter;
+				}
 
 				board[y][x] = cellCharacter;
 			}

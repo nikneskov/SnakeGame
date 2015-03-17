@@ -3,7 +3,6 @@ package controller;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 
 import model.Board;
@@ -250,6 +249,7 @@ public class Controller implements KeyListener {
 		return dy + dx;
 	}
 
+	@SuppressWarnings("unused")
 	private CardinalDirection changeDirection (CardinalDirection direction){
 		switch(direction){
 		case SOUTH:
